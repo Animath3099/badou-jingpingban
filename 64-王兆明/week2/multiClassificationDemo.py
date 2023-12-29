@@ -19,12 +19,16 @@ import matplotlib.pyplot as plt
 class FirstNumTorchModel(nn.Module):
     def __init__(self, input_size):
         super(FirstNumTorchModel, self).__init__()
-        self.linear = nn.Linear(input_size, 7)  # 线性层
+        self.linear1 = nn.Linear(input_size, 10)  # 线性层1-10
+        self.linear2 = nn.Linear(10, 15)  # 线性层2-15
+        self.linear3 = nn.Linear(15, 7)  # 线性层3
         self.loss = nn.functional.cross_entropy  # loss函数采用交叉熵损失
 
     # 当输入真实标签，返回loss值；无真实标签，返回预测值
     def forward(self, x, y=None):
-        y_pred = self.linear(x)  # (batch_size, input_size) -> (batch_size, 1)
+        x = self.linear1(x)  # 隐藏层1
+        x = self.linear2(x)  # 隐藏层2
+        y_pred = self.linear3(x)  # 输出预测值
         if y is not None:
             return self.loss(y_pred, y)  # 预测值和真实值计算损失
         else:
