@@ -12,14 +12,14 @@ import matplotlib.pyplot as plt
 
 基于pytorch框架编写模型训练
 实现一个自行构造的找规律(机器学习)任务
-规律：x是一个6维向量，向量中从0-4遍历，找第一个大于0.5的下标，否则输出5
+规律：x是一个6维向量，向量中从0-5遍历，找第一个大于0.5的下标，否则输出6
 
 """
 
 class FirstNumTorchModel(nn.Module):
     def __init__(self, input_size):
         super(FirstNumTorchModel, self).__init__()
-        self.linear = nn.Linear(input_size, 6)  # 线性层
+        self.linear = nn.Linear(input_size, 7)  # 线性层
         self.loss = nn.functional.cross_entropy  # loss函数采用交叉熵损失
 
     # 当输入真实标签，返回loss值；无真实标签，返回预测值
@@ -35,10 +35,10 @@ class FirstNumTorchModel(nn.Module):
 # 随机生成一个5维向量，找到第一个大于0.5的下标
 def build_sample():
     x = np.random.random(6)
-    x[5] = 0.9
     for index, value in enumerate(x):
         if value > 0.5:
             return x, index
+    return x, 6
 
 
 # 随机生成一批样本
@@ -128,6 +128,7 @@ def predict(model_path, input_vec):
 if __name__ == "__main__":
     main()
     test_vec = [[0.07889086,0.15229675,0.31082123,0.03504317,0.18920843, 0.9],
+                [0.07889086,0.15229675,0.31082123,0.03504317,0.18920843, 0.3],
                 [0.94963533,0.5524256,0.95758807,0.95520434,0.84890681, 0.9],
                 [0.78797868,0.67482528,0.13625847,0.34675372,0.19871392, 0.9],
                 [0.19349776,0.59416669,0.92579291,0.41567412,0.7358894, 0.9]]
