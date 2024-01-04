@@ -1,0 +1,600 @@
+2023-12-30 01:39:27,687 - multi-classification - INFO - =========
+第1轮平均loss:2.287394751548767
+2023-12-30 01:39:27,691 - multi-classification - INFO - 正确预测个数：41，正确率：0.205
+2023-12-30 01:39:27,783 - multi-classification - INFO - =========
+第2轮平均loss:2.195907621383667
+2023-12-30 01:39:27,787 - multi-classification - INFO - 正确预测个数：71，正确率：0.355
+2023-12-30 01:39:27,884 - multi-classification - INFO - =========
+第3轮平均loss:2.129982674598694
+2023-12-30 01:39:27,889 - multi-classification - INFO - 正确预测个数：91，正确率：0.455
+2023-12-30 01:39:27,986 - multi-classification - INFO - =========
+第4轮平均loss:2.0682593150138855
+2023-12-30 01:39:27,991 - multi-classification - INFO - 正确预测个数：93，正确率：0.465
+2023-12-30 01:39:28,083 - multi-classification - INFO - =========
+第5轮平均loss:2.0099781522750853
+2023-12-30 01:39:28,087 - multi-classification - INFO - 正确预测个数：109，正确率：0.545
+2023-12-30 01:39:28,184 - multi-classification - INFO - =========
+第6轮平均loss:1.954921169757843
+2023-12-30 01:39:28,187 - multi-classification - INFO - 正确预测个数：116，正确率：0.58
+2023-12-30 01:39:28,284 - multi-classification - INFO - =========
+第7轮平均loss:1.9028925886154175
+2023-12-30 01:39:28,289 - multi-classification - INFO - 正确预测个数：118，正确率：0.59
+2023-12-30 01:39:28,388 - multi-classification - INFO - =========
+第8轮平均loss:1.8537029252052306
+2023-12-30 01:39:28,392 - multi-classification - INFO - 正确预测个数：123，正确率：0.615
+2023-12-30 01:39:28,490 - multi-classification - INFO - =========
+第9轮平均loss:1.8071704621315003
+2023-12-30 01:39:28,493 - multi-classification - INFO - 正确预测个数：142，正确率：0.71
+2023-12-30 01:39:28,592 - multi-classification - INFO - =========
+第10轮平均loss:1.7631228942871093
+2023-12-30 01:39:28,596 - multi-classification - INFO - 正确预测个数：134，正确率：0.67
+2023-12-30 01:39:28,693 - multi-classification - INFO - =========
+第11轮平均loss:1.721398334980011
+2023-12-30 01:39:28,697 - multi-classification - INFO - 正确预测个数：136，正确率：0.68
+2023-12-30 01:39:28,793 - multi-classification - INFO - =========
+第12轮平均loss:1.6818451471328735
+2023-12-30 01:39:28,796 - multi-classification - INFO - 正确预测个数：149，正确率：0.745
+2023-12-30 01:39:28,892 - multi-classification - INFO - =========
+第13轮平均loss:1.644321834564209
+2023-12-30 01:39:28,894 - multi-classification - INFO - 正确预测个数：159，正确率：0.795
+2023-12-30 01:39:28,998 - multi-classification - INFO - =========
+第14轮平均loss:1.6086966323852538
+2023-12-30 01:39:29,002 - multi-classification - INFO - 正确预测个数：160，正确率：0.8
+2023-12-30 01:39:29,094 - multi-classification - INFO - =========
+第15轮平均loss:1.5748470559120178
+2023-12-30 01:39:29,098 - multi-classification - INFO - 正确预测个数：160，正确率：0.8
+2023-12-30 01:39:29,198 - multi-classification - INFO - =========
+第16轮平均loss:1.542659284591675
+2023-12-30 01:39:29,202 - multi-classification - INFO - 正确预测个数：156，正确率：0.78
+2023-12-30 01:39:29,305 - multi-classification - INFO - =========
+第17轮平均loss:1.5120275259017943
+2023-12-30 01:39:29,308 - multi-classification - INFO - 正确预测个数：161，正确率：0.805
+2023-12-30 01:39:29,402 - multi-classification - INFO - =========
+第18轮平均loss:1.4828536596298219
+2023-12-30 01:39:29,405 - multi-classification - INFO - 正确预测个数：160，正确率：0.8
+2023-12-30 01:39:29,504 - multi-classification - INFO - =========
+第19轮平均loss:1.4550464153289795
+2023-12-30 01:39:29,507 - multi-classification - INFO - 正确预测个数：158，正确率：0.79
+2023-12-30 01:39:29,598 - multi-classification - INFO - =========
+第20轮平均loss:1.4285211701393128
+2023-12-30 01:39:29,600 - multi-classification - INFO - 正确预测个数：167，正确率：0.835
+2023-12-30 01:39:29,698 - multi-classification - INFO - =========
+第21轮平均loss:1.4031994009017945
+2023-12-30 01:39:29,702 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:29,794 - multi-classification - INFO - =========
+第22轮平均loss:1.3790078148841858
+2023-12-30 01:39:29,798 - multi-classification - INFO - 正确预测个数：169，正确率：0.845
+2023-12-30 01:39:29,893 - multi-classification - INFO - =========
+第23轮平均loss:1.3558783674240111
+2023-12-30 01:39:29,896 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:29,992 - multi-classification - INFO - =========
+第24轮平均loss:1.3337479972839354
+2023-12-30 01:39:29,994 - multi-classification - INFO - 正确预测个数：160，正确率：0.8
+2023-12-30 01:39:30,093 - multi-classification - INFO - =========
+第25轮平均loss:1.3125576295852661
+2023-12-30 01:39:30,096 - multi-classification - INFO - 正确预测个数：169，正确率：0.845
+2023-12-30 01:39:30,193 - multi-classification - INFO - =========
+第26轮平均loss:1.2922524638175965
+2023-12-30 01:39:30,196 - multi-classification - INFO - 正确预测个数：169，正确率：0.845
+2023-12-30 01:39:30,292 - multi-classification - INFO - =========
+第27轮平均loss:1.2727815480232239
+2023-12-30 01:39:30,294 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:30,396 - multi-classification - INFO - =========
+第28轮平均loss:1.254097119808197
+2023-12-30 01:39:30,400 - multi-classification - INFO - 正确预测个数：178，正确率：0.89
+2023-12-30 01:39:30,498 - multi-classification - INFO - =========
+第29轮平均loss:1.2361549639701843
+2023-12-30 01:39:30,501 - multi-classification - INFO - 正确预测个数：169，正确率：0.845
+2023-12-30 01:39:30,596 - multi-classification - INFO - =========
+第30轮平均loss:1.2189135346412658
+2023-12-30 01:39:30,598 - multi-classification - INFO - 正确预测个数：171，正确率：0.855
+2023-12-30 01:39:30,696 - multi-classification - INFO - =========
+第31轮平均loss:1.2023341150283813
+2023-12-30 01:39:30,699 - multi-classification - INFO - 正确预测个数：175，正确率：0.875
+2023-12-30 01:39:30,802 - multi-classification - INFO - =========
+第32轮平均loss:1.1863806705474853
+2023-12-30 01:39:30,805 - multi-classification - INFO - 正确预测个数：175，正确率：0.875
+2023-12-30 01:39:30,902 - multi-classification - INFO - =========
+第33轮平均loss:1.1710193810462952
+2023-12-30 01:39:30,905 - multi-classification - INFO - 正确预测个数：172，正确率：0.86
+2023-12-30 01:39:30,999 - multi-classification - INFO - =========
+第34轮平均loss:1.1562186894416808
+2023-12-30 01:39:31,002 - multi-classification - INFO - 正确预测个数：169，正确率：0.845
+2023-12-30 01:39:31,099 - multi-classification - INFO - =========
+第35轮平均loss:1.1419491147994996
+2023-12-30 01:39:31,102 - multi-classification - INFO - 正确预测个数：177，正确率：0.885
+2023-12-30 01:39:31,196 - multi-classification - INFO - =========
+第36轮平均loss:1.1281829166412354
+2023-12-30 01:39:31,199 - multi-classification - INFO - 正确预测个数：174，正确率：0.87
+2023-12-30 01:39:31,294 - multi-classification - INFO - =========
+第37轮平均loss:1.1148943274021148
+2023-12-30 01:39:31,296 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:31,387 - multi-classification - INFO - =========
+第38轮平均loss:1.102059042930603
+2023-12-30 01:39:31,389 - multi-classification - INFO - 正确预测个数：181，正确率：0.905
+2023-12-30 01:39:31,490 - multi-classification - INFO - =========
+第39轮平均loss:1.0896544108390809
+2023-12-30 01:39:31,493 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:31,590 - multi-classification - INFO - =========
+第40轮平均loss:1.0776590142250062
+2023-12-30 01:39:31,594 - multi-classification - INFO - 正确预测个数：177，正确率：0.885
+2023-12-30 01:39:31,696 - multi-classification - INFO - =========
+第41轮平均loss:1.0660529434680939
+2023-12-30 01:39:31,700 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:31,800 - multi-classification - INFO - =========
+第42轮平均loss:1.0548172061443328
+2023-12-30 01:39:31,804 - multi-classification - INFO - 正确预测个数：180，正确率：0.9
+2023-12-30 01:39:31,899 - multi-classification - INFO - =========
+第43轮平均loss:1.0439340412616729
+2023-12-30 01:39:31,903 - multi-classification - INFO - 正确预测个数：181，正确率：0.905
+2023-12-30 01:39:32,004 - multi-classification - INFO - =========
+第44轮平均loss:1.0333870768547058
+2023-12-30 01:39:32,006 - multi-classification - INFO - 正确预测个数：181，正确率：0.905
+2023-12-30 01:39:32,102 - multi-classification - INFO - =========
+第45轮平均loss:1.0231605770587922
+2023-12-30 01:39:32,105 - multi-classification - INFO - 正确预测个数：176，正确率：0.88
+2023-12-30 01:39:32,205 - multi-classification - INFO - =========
+第46轮平均loss:1.0132398624420167
+2023-12-30 01:39:32,208 - multi-classification - INFO - 正确预测个数：177，正确率：0.885
+2023-12-30 01:39:32,307 - multi-classification - INFO - =========
+第47轮平均loss:1.003610911130905
+2023-12-30 01:39:32,311 - multi-classification - INFO - 正确预测个数：173，正确率：0.865
+2023-12-30 01:39:32,408 - multi-classification - INFO - =========
+第48轮平均loss:0.9942606840133666
+2023-12-30 01:39:32,411 - multi-classification - INFO - 正确预测个数：180，正确率：0.9
+2023-12-30 01:39:32,507 - multi-classification - INFO - =========
+第49轮平均loss:0.9851769759654999
+2023-12-30 01:39:32,509 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:32,604 - multi-classification - INFO - =========
+第50轮平均loss:0.9763481106758117
+2023-12-30 01:39:32,607 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:32,704 - multi-classification - INFO - =========
+第51轮平均loss:0.9677631020545959
+2023-12-30 01:39:32,708 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:32,799 - multi-classification - INFO - =========
+第52轮平均loss:0.959411604642868
+2023-12-30 01:39:32,802 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:32,891 - multi-classification - INFO - =========
+第53轮平均loss:0.9512837648391723
+2023-12-30 01:39:32,894 - multi-classification - INFO - 正确预测个数：180，正确率：0.9
+2023-12-30 01:39:32,988 - multi-classification - INFO - =========
+第54轮平均loss:0.9433703055381775
+2023-12-30 01:39:32,991 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:33,090 - multi-classification - INFO - =========
+第55轮平均loss:0.9356624543666839
+2023-12-30 01:39:33,093 - multi-classification - INFO - 正确预测个数：175，正确率：0.875
+2023-12-30 01:39:33,186 - multi-classification - INFO - =========
+第56轮平均loss:0.9281518561840058
+2023-12-30 01:39:33,190 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:33,289 - multi-classification - INFO - =========
+第57轮平均loss:0.9208306856155396
+2023-12-30 01:39:33,292 - multi-classification - INFO - 正确预测个数：176，正确率：0.88
+2023-12-30 01:39:33,388 - multi-classification - INFO - =========
+第58轮平均loss:0.9136912627220154
+2023-12-30 01:39:33,390 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:33,482 - multi-classification - INFO - =========
+第59轮平均loss:0.9067268245220185
+2023-12-30 01:39:33,484 - multi-classification - INFO - 正确预测个数：177，正确率：0.885
+2023-12-30 01:39:33,583 - multi-classification - INFO - =========
+第60轮平均loss:0.8999304602146149
+2023-12-30 01:39:33,585 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:33,680 - multi-classification - INFO - =========
+第61轮平均loss:0.893295628786087
+2023-12-30 01:39:33,683 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:33,779 - multi-classification - INFO - =========
+第62轮平均loss:0.886816474199295
+2023-12-30 01:39:33,782 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:33,876 - multi-classification - INFO - =========
+第63轮平均loss:0.8804873056411743
+2023-12-30 01:39:33,880 - multi-classification - INFO - 正确预测个数：176，正确率：0.88
+2023-12-30 01:39:33,980 - multi-classification - INFO - =========
+第64轮平均loss:0.8743023390769958
+2023-12-30 01:39:33,983 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:34,076 - multi-classification - INFO - =========
+第65轮平均loss:0.8682564888000488
+2023-12-30 01:39:34,079 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:34,177 - multi-classification - INFO - =========
+第66轮平均loss:0.8623448443412781
+2023-12-30 01:39:34,180 - multi-classification - INFO - 正确预测个数：180，正确率：0.9
+2023-12-30 01:39:34,276 - multi-classification - INFO - =========
+第67轮平均loss:0.8565625193119049
+2023-12-30 01:39:34,278 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:34,373 - multi-classification - INFO - =========
+第68轮平均loss:0.8509051008224487
+2023-12-30 01:39:34,376 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:34,469 - multi-classification - INFO - =========
+第69轮平均loss:0.8453681950569153
+2023-12-30 01:39:34,472 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:34,564 - multi-classification - INFO - =========
+第70轮平均loss:0.839947726726532
+2023-12-30 01:39:34,566 - multi-classification - INFO - 正确预测个数：177，正确率：0.885
+2023-12-30 01:39:34,660 - multi-classification - INFO - =========
+第71轮平均loss:0.8346397726535797
+2023-12-30 01:39:34,663 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:34,752 - multi-classification - INFO - =========
+第72轮平均loss:0.8294405336380005
+2023-12-30 01:39:34,756 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:34,851 - multi-classification - INFO - =========
+第73轮平均loss:0.824346483707428
+2023-12-30 01:39:34,854 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:34,957 - multi-classification - INFO - =========
+第74轮平均loss:0.819354129076004
+2023-12-30 01:39:34,960 - multi-classification - INFO - 正确预测个数：175，正确率：0.875
+2023-12-30 01:39:35,059 - multi-classification - INFO - =========
+第75轮平均loss:0.8144602148532868
+2023-12-30 01:39:35,062 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:35,158 - multi-classification - INFO - =========
+第76轮平均loss:0.809661728143692
+2023-12-30 01:39:35,160 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:35,261 - multi-classification - INFO - =========
+第77轮平均loss:0.804955528974533
+2023-12-30 01:39:35,264 - multi-classification - INFO - 正确预测个数：179，正确率：0.895
+2023-12-30 01:39:35,356 - multi-classification - INFO - =========
+第78轮平均loss:0.8003387937545776
+2023-12-30 01:39:35,360 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:35,458 - multi-classification - INFO - =========
+第79轮平均loss:0.7958086864948273
+2023-12-30 01:39:35,462 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:35,554 - multi-classification - INFO - =========
+第80轮平均loss:0.7913626627922058
+2023-12-30 01:39:35,557 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:35,658 - multi-classification - INFO - =========
+第81轮平均loss:0.7869980885982514
+2023-12-30 01:39:35,661 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:35,757 - multi-classification - INFO - =========
+第82轮平均loss:0.7827126441001893
+2023-12-30 01:39:35,760 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:35,853 - multi-classification - INFO - =========
+第83轮平均loss:0.7785038709640503
+2023-12-30 01:39:35,857 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:35,948 - multi-classification - INFO - =========
+第84轮平均loss:0.7743696179389954
+2023-12-30 01:39:35,951 - multi-classification - INFO - 正确预测个数：178，正确率：0.89
+2023-12-30 01:39:36,050 - multi-classification - INFO - =========
+第85轮平均loss:0.7703077771663666
+2023-12-30 01:39:36,054 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:36,154 - multi-classification - INFO - =========
+第86轮平均loss:0.766316103219986
+2023-12-30 01:39:36,158 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:36,256 - multi-classification - INFO - =========
+第87轮平均loss:0.7623927624225616
+2023-12-30 01:39:36,259 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:36,359 - multi-classification - INFO - =========
+第88轮平均loss:0.758535804271698
+2023-12-30 01:39:36,363 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:36,461 - multi-classification - INFO - =========
+第89轮平均loss:0.7547434318065643
+2023-12-30 01:39:36,464 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:36,558 - multi-classification - INFO - =========
+第90轮平均loss:0.7510137650966644
+2023-12-30 01:39:36,561 - multi-classification - INFO - 正确预测个数：181，正确率：0.905
+2023-12-30 01:39:36,661 - multi-classification - INFO - =========
+第91轮平均loss:0.7473451406955719
+2023-12-30 01:39:36,666 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:36,771 - multi-classification - INFO - =========
+第92轮平均loss:0.7437359635829925
+2023-12-30 01:39:36,774 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:36,867 - multi-classification - INFO - =========
+第93轮平均loss:0.7401846599578857
+2023-12-30 01:39:36,872 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:36,969 - multi-classification - INFO - =========
+第94轮平均loss:0.7366896221637725
+2023-12-30 01:39:36,973 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:37,072 - multi-classification - INFO - =========
+第95轮平均loss:0.733249463558197
+2023-12-30 01:39:37,076 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:37,168 - multi-classification - INFO - =========
+第96轮平均loss:0.729862720489502
+2023-12-30 01:39:37,171 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:37,266 - multi-classification - INFO - =========
+第97轮平均loss:0.7265280508995056
+2023-12-30 01:39:37,268 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:37,365 - multi-classification - INFO - =========
+第98轮平均loss:0.7232440786361695
+2023-12-30 01:39:37,368 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:37,460 - multi-classification - INFO - =========
+第99轮平均loss:0.7200094888210297
+2023-12-30 01:39:37,462 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:37,559 - multi-classification - INFO - =========
+第100轮平均loss:0.7168231658935547
+2023-12-30 01:39:37,561 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:37,660 - multi-classification - INFO - =========
+第101轮平均loss:0.7136839258670807
+2023-12-30 01:39:37,663 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:37,766 - multi-classification - INFO - =========
+第102轮平均loss:0.7105905070304871
+2023-12-30 01:39:37,768 - multi-classification - INFO - 正确预测个数：176，正确率：0.88
+2023-12-30 01:39:37,864 - multi-classification - INFO - =========
+第103轮平均loss:0.7075419446229935
+2023-12-30 01:39:37,866 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:37,966 - multi-classification - INFO - =========
+第104轮平均loss:0.7045370591878891
+2023-12-30 01:39:37,969 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:38,065 - multi-classification - INFO - =========
+第105轮平均loss:0.7015748090744018
+2023-12-30 01:39:38,068 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:38,166 - multi-classification - INFO - =========
+第106轮平均loss:0.6986542463302612
+2023-12-30 01:39:38,170 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:38,264 - multi-classification - INFO - =========
+第107轮平均loss:0.6957743414640427
+2023-12-30 01:39:38,268 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:38,366 - multi-classification - INFO - =========
+第108轮平均loss:0.6929342572689057
+2023-12-30 01:39:38,370 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:38,464 - multi-classification - INFO - =========
+第109轮平均loss:0.6901330361366272
+2023-12-30 01:39:38,468 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:38,566 - multi-classification - INFO - =========
+第110轮平均loss:0.6873697166442871
+2023-12-30 01:39:38,568 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:38,664 - multi-classification - INFO - =========
+第111轮平均loss:0.6846434991359711
+2023-12-30 01:39:38,666 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:38,759 - multi-classification - INFO - =========
+第112轮平均loss:0.6819535367488861
+2023-12-30 01:39:38,762 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:38,854 - multi-classification - INFO - =========
+第113轮平均loss:0.6792990643978118
+2023-12-30 01:39:38,856 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:38,952 - multi-classification - INFO - =========
+第114轮平均loss:0.6766793929338455
+2023-12-30 01:39:38,954 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:39,052 - multi-classification - INFO - =========
+第115轮平均loss:0.6740936108827591
+2023-12-30 01:39:39,055 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:39,151 - multi-classification - INFO - =========
+第116轮平均loss:0.6715409650802612
+2023-12-30 01:39:39,154 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:39,252 - multi-classification - INFO - =========
+第117轮平均loss:0.6690208636522293
+2023-12-30 01:39:39,255 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:39,351 - multi-classification - INFO - =========
+第118轮平均loss:0.6665325819253921
+2023-12-30 01:39:39,354 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:39,449 - multi-classification - INFO - =========
+第119轮平均loss:0.6640753834247589
+2023-12-30 01:39:39,453 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:39,554 - multi-classification - INFO - =========
+第120轮平均loss:0.6616486988067627
+2023-12-30 01:39:39,558 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:39,656 - multi-classification - INFO - =========
+第121轮平均loss:0.6592518821954727
+2023-12-30 01:39:39,660 - multi-classification - INFO - 正确预测个数：181，正确率：0.905
+2023-12-30 01:39:39,755 - multi-classification - INFO - =========
+第122轮平均loss:0.6568842780590057
+2023-12-30 01:39:39,757 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:39,853 - multi-classification - INFO - =========
+第123轮平均loss:0.6545452319383621
+2023-12-30 01:39:39,855 - multi-classification - INFO - 正确预测个数：192，正确率：0.96
+2023-12-30 01:39:39,948 - multi-classification - INFO - =========
+第124轮平均loss:0.6522342859506607
+2023-12-30 01:39:39,952 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:40,050 - multi-classification - INFO - =========
+第125轮平均loss:0.6499507837295532
+2023-12-30 01:39:40,053 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:40,151 - multi-classification - INFO - =========
+第126轮平均loss:0.6476941869258881
+2023-12-30 01:39:40,154 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:40,253 - multi-classification - INFO - =========
+第127轮平均loss:0.6454641256332397
+2023-12-30 01:39:40,256 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:40,350 - multi-classification - INFO - =========
+第128轮平均loss:0.6432600771188736
+2023-12-30 01:39:40,354 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:40,446 - multi-classification - INFO - =========
+第129轮平均loss:0.6410813604593277
+2023-12-30 01:39:40,449 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:40,547 - multi-classification - INFO - =========
+第130轮平均loss:0.6389276689291
+2023-12-30 01:39:40,550 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:40,651 - multi-classification - INFO - =========
+第131轮平均loss:0.6367982954978942
+2023-12-30 01:39:40,653 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:40,747 - multi-classification - INFO - =========
+第132轮平均loss:0.6346928254365921
+2023-12-30 01:39:40,750 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:40,852 - multi-classification - INFO - =========
+第133轮平均loss:0.6326110092401505
+2023-12-30 01:39:40,856 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:40,954 - multi-classification - INFO - =========
+第134轮平均loss:0.6305521711111068
+2023-12-30 01:39:40,957 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:41,053 - multi-classification - INFO - =========
+第135轮平均loss:0.6285158789157868
+2023-12-30 01:39:41,056 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:41,158 - multi-classification - INFO - =========
+第136轮平均loss:0.6265019916296005
+2023-12-30 01:39:41,161 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:41,256 - multi-classification - INFO - =========
+第137轮平均loss:0.6245098780393601
+2023-12-30 01:39:41,259 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:41,352 - multi-classification - INFO - =========
+第138轮平均loss:0.6225392519235611
+2023-12-30 01:39:41,354 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:41,455 - multi-classification - INFO - =========
+第139轮平均loss:0.6205897086858749
+2023-12-30 01:39:41,458 - multi-classification - INFO - 正确预测个数：192，正确率：0.96
+2023-12-30 01:39:41,553 - multi-classification - INFO - =========
+第140轮平均loss:0.6186607217788697
+2023-12-30 01:39:41,557 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:41,653 - multi-classification - INFO - =========
+第141轮平均loss:0.6167519898414612
+2023-12-30 01:39:41,656 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:41,753 - multi-classification - INFO - =========
+第142轮平均loss:0.6148633244037628
+2023-12-30 01:39:41,756 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:41,857 - multi-classification - INFO - =========
+第143轮平均loss:0.6129942568540573
+2023-12-30 01:39:41,859 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:41,959 - multi-classification - INFO - =========
+第144轮平均loss:0.6111443966627121
+2023-12-30 01:39:41,962 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:42,057 - multi-classification - INFO - =========
+第145轮平均loss:0.6093134515285492
+2023-12-30 01:39:42,060 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:42,153 - multi-classification - INFO - =========
+第146轮平均loss:0.607501074552536
+2023-12-30 01:39:42,156 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:42,254 - multi-classification - INFO - =========
+第147轮平均loss:0.6057069902420044
+2023-12-30 01:39:42,258 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:42,350 - multi-classification - INFO - =========
+第148轮平均loss:0.6039307689666749
+2023-12-30 01:39:42,353 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:42,450 - multi-classification - INFO - =========
+第149轮平均loss:0.6021723426580429
+2023-12-30 01:39:42,452 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:42,549 - multi-classification - INFO - =========
+第150轮平均loss:0.6004310848712922
+2023-12-30 01:39:42,552 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:42,648 - multi-classification - INFO - =========
+第151轮平均loss:0.5987069711685181
+2023-12-30 01:39:42,651 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:42,752 - multi-classification - INFO - =========
+第152轮平均loss:0.596999626159668
+2023-12-30 01:39:42,755 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:42,852 - multi-classification - INFO - =========
+第153轮平均loss:0.5953089634180069
+2023-12-30 01:39:42,855 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:42,951 - multi-classification - INFO - =========
+第154轮平均loss:0.5936345626115799
+2023-12-30 01:39:42,954 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:43,048 - multi-classification - INFO - =========
+第155轮平均loss:0.5919760664701462
+2023-12-30 01:39:43,052 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:43,151 - multi-classification - INFO - =========
+第156轮平均loss:0.5903333036899566
+2023-12-30 01:39:43,154 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:43,250 - multi-classification - INFO - =========
+第157轮平均loss:0.5887060308456421
+2023-12-30 01:39:43,252 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:43,357 - multi-classification - INFO - =========
+第158轮平均loss:0.5870938705205917
+2023-12-30 01:39:43,359 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:43,458 - multi-classification - INFO - =========
+第159轮平均loss:0.5854967727661132
+2023-12-30 01:39:43,460 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:43,557 - multi-classification - INFO - =========
+第160轮平均loss:0.5839145206212998
+2023-12-30 01:39:43,561 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:43,656 - multi-classification - INFO - =========
+第161轮平均loss:0.5823466795682907
+2023-12-30 01:39:43,660 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:43,758 - multi-classification - INFO - =========
+第162轮平均loss:0.5807931830883026
+2023-12-30 01:39:43,761 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:43,857 - multi-classification - INFO - =========
+第163轮平均loss:0.5792537928819657
+2023-12-30 01:39:43,861 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:43,960 - multi-classification - INFO - =========
+第164轮平均loss:0.5777282396554947
+2023-12-30 01:39:43,963 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:44,059 - multi-classification - INFO - =========
+第165轮平均loss:0.5762164174318314
+2023-12-30 01:39:44,061 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:44,158 - multi-classification - INFO - =========
+第166轮平均loss:0.5747180403470993
+2023-12-30 01:39:44,161 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:44,260 - multi-classification - INFO - =========
+第167轮平均loss:0.5732328411340714
+2023-12-30 01:39:44,263 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:44,359 - multi-classification - INFO - =========
+第168轮平均loss:0.5717607107162476
+2023-12-30 01:39:44,362 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:44,462 - multi-classification - INFO - =========
+第169轮平均loss:0.5703015278577804
+2023-12-30 01:39:44,465 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:44,559 - multi-classification - INFO - =========
+第170轮平均loss:0.5688549486398697
+2023-12-30 01:39:44,563 - multi-classification - INFO - 正确预测个数：194，正确率：0.97
+2023-12-30 01:39:44,660 - multi-classification - INFO - =========
+第171轮平均loss:0.5674208760261535
+2023-12-30 01:39:44,662 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:44,763 - multi-classification - INFO - =========
+第172轮平均loss:0.5659990009069443
+2023-12-30 01:39:44,766 - multi-classification - INFO - 正确预测个数：190，正确率：0.95
+2023-12-30 01:39:44,859 - multi-classification - INFO - =========
+第173轮平均loss:0.5645892397165299
+2023-12-30 01:39:44,862 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:44,961 - multi-classification - INFO - =========
+第174轮平均loss:0.5631914780139923
+2023-12-30 01:39:44,964 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:45,058 - multi-classification - INFO - =========
+第175轮平均loss:0.5618054986000061
+2023-12-30 01:39:45,062 - multi-classification - INFO - 正确预测个数：194，正确率：0.97
+2023-12-30 01:39:45,157 - multi-classification - INFO - =========
+第176轮平均loss:0.5604311130046844
+2023-12-30 01:39:45,160 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:45,256 - multi-classification - INFO - =========
+第177轮平均loss:0.5590682550668716
+2023-12-30 01:39:45,261 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:45,362 - multi-classification - INFO - =========
+第178轮平均loss:0.5577166249752045
+2023-12-30 01:39:45,367 - multi-classification - INFO - 正确预测个数：182，正确率：0.91
+2023-12-30 01:39:45,466 - multi-classification - INFO - =========
+第179轮平均loss:0.5563760766983032
+2023-12-30 01:39:45,468 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:45,565 - multi-classification - INFO - =========
+第180轮平均loss:0.555046505689621
+2023-12-30 01:39:45,568 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:45,665 - multi-classification - INFO - =========
+第181轮平均loss:0.5537278168201446
+2023-12-30 01:39:45,667 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:45,760 - multi-classification - INFO - =========
+第182轮平均loss:0.5524198032617569
+2023-12-30 01:39:45,764 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:45,859 - multi-classification - INFO - =========
+第183轮平均loss:0.5511223586797714
+2023-12-30 01:39:45,861 - multi-classification - INFO - 正确预测个数：196，正确率：0.98
+2023-12-30 01:39:45,958 - multi-classification - INFO - =========
+第184轮平均loss:0.5498351262807846
+2023-12-30 01:39:45,962 - multi-classification - INFO - 正确预测个数：194，正确率：0.97
+2023-12-30 01:39:46,057 - multi-classification - INFO - =========
+第185轮平均loss:0.5485582646131516
+2023-12-30 01:39:46,060 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:46,150 - multi-classification - INFO - =========
+第186轮平均loss:0.5472915489673614
+2023-12-30 01:39:46,153 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:46,249 - multi-classification - INFO - =========
+第187轮平均loss:0.5460347310304642
+2023-12-30 01:39:46,252 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
+2023-12-30 01:39:46,347 - multi-classification - INFO - =========
+第188轮平均loss:0.54478773188591
+2023-12-30 01:39:46,350 - multi-classification - INFO - 正确预测个数：188，正确率：0.94
+2023-12-30 01:39:46,449 - multi-classification - INFO - =========
+第189轮平均loss:0.5435504143238068
+2023-12-30 01:39:46,452 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:46,546 - multi-classification - INFO - =========
+第190轮平均loss:0.5423227407932282
+2023-12-30 01:39:46,549 - multi-classification - INFO - 正确预测个数：184，正确率：0.92
+2023-12-30 01:39:46,646 - multi-classification - INFO - =========
+第191轮平均loss:0.5411045191287994
+2023-12-30 01:39:46,649 - multi-classification - INFO - 正确预测个数：194，正确率：0.97
+2023-12-30 01:39:46,743 - multi-classification - INFO - =========
+第192轮平均loss:0.5398956835269928
+2023-12-30 01:39:46,747 - multi-classification - INFO - 正确预测个数：187，正确率：0.935
+2023-12-30 01:39:46,850 - multi-classification - INFO - =========
+第193轮平均loss:0.5386959667205811
+2023-12-30 01:39:46,852 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:46,946 - multi-classification - INFO - =========
+第194轮平均loss:0.5375053762197495
+2023-12-30 01:39:46,949 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:47,040 - multi-classification - INFO - =========
+第195轮平均loss:0.5363237780332565
+2023-12-30 01:39:47,043 - multi-classification - INFO - 正确预测个数：186，正确率：0.93
+2023-12-30 01:39:47,141 - multi-classification - INFO - =========
+第196轮平均loss:0.5351509636640549
+2023-12-30 01:39:47,144 - multi-classification - INFO - 正确预测个数：185，正确率：0.925
+2023-12-30 01:39:47,240 - multi-classification - INFO - =========
+第197轮平均loss:0.5339868632555008
+2023-12-30 01:39:47,242 - multi-classification - INFO - 正确预测个数：194，正确率：0.97
+2023-12-30 01:39:47,334 - multi-classification - INFO - =========
+第198轮平均loss:0.532831398487091
+2023-12-30 01:39:47,338 - multi-classification - INFO - 正确预测个数：183，正确率：0.915
+2023-12-30 01:39:47,438 - multi-classification - INFO - =========
+第199轮平均loss:0.5316845107078553
+2023-12-30 01:39:47,441 - multi-classification - INFO - 正确预测个数：191，正确率：0.955
+2023-12-30 01:39:47,537 - multi-classification - INFO - =========
+第200轮平均loss:0.5305461044311524
+2023-12-30 01:39:47,541 - multi-classification - INFO - 正确预测个数：189，正确率：0.945
