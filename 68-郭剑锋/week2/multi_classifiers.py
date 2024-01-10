@@ -3,62 +3,57 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import random
+import json
 import matplotlib.pyplot as plt
-
+import torch.nn.functional as F
 """
 
-基于pytorch框架编写模型训练-------交叉熵
+基于pytorch框架编写模型训练
 实现一个自行构造的找规律(机器学习)任务
-
-规律：x是一个6维向量，前两个数之和最大为第一类：0，中间两个数之和最大为第二类：1，最后两个数之和最大为第三类: 2
-
-// 也可以将正负样本的案例，使用交叉熵完成
-
+规律：x是一个5维向量，如果第1个数>第5个数，则为正样本，反之为负样本
 
 """
+
 
 class TorchModel(nn.Module):
     def __init__(self, input_size):
         super(TorchModel, self).__init__()
-        self.linear = nn.Linear(input_size, 3)  # 线性层，输出为batch_size*10维向量
-        # self.activation = torch.softmax  # sigmoid归一化函数   cross_entropy内部已经集成了
-        self.loss = nn.functional.cross_entropy  # 交叉熵
+        self.linear1 = nn.Linear(input_size, 16)
+        self.relu = nn.ReLU()
+        self.linear2 = nn.Linear(16, 5)
+        self.loss = nn.CrossEntropyLoss()
 
     # 当输入真实标签，返回loss值；无真实标签，返回预测值
     def forward(self, x, y=None):
-        ## y_pred 输出的是一组权重
-        y_pred = self.linear(x)  # (batch_size, input_size) -> (batch_size, 10)
-        # y_pred = self.activation(x)  # (batch_size, 1) -> (batch_size, 1)
+        x = self.linear1(x)  # (batch_size, input_size) -> (batch_size, 1)
+        x = self.relu(x)
+        y_pred = self.linear2(x)  # (batch_size, 1) -> (batch_size, 1)
         if y is not None:
-            return self.loss(y_pred, y)  # 预测值和真实值计算损失  (batch_size, 10)--> (batch_size, 1) compare y
+            return self.loss(y_pred, y.squeeze())  # 预测值和真实值计算损失
         else:
             return y_pred  # 输出预测结果
 
 
 # 生成一个样本, 样本的生成方法，代表了我们要学习的规律
-# 随机生成一个10维向量，取其中最小值的索引值
+# 随机生成一个5维向量，如果第一个值大于第五个值，认为是正样本，反之为负样本
 def build_sample():
-    x = np.random.rand(6)
-    sums = [x[0] + x[1], x[2] + x[3], x[4] + x[5]]
-    y = np.argmax(sums)
-    return x, y
+    x = np.random.random(5)
+    max_index = np.argmax(x)
+    return x, max_index
 
 
 # 随机生成一批样本
-# 数据结构为
-X=[[0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843],
-   [0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843],
-   [0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843]]
-y=[0,1,2]
-
-
+# 正负样本均匀生成
 def build_dataset(total_sample_num):
     X = []
     Y = []
     for i in range(total_sample_num):
         x, y = build_sample()
         X.append(x)
-        Y.append(y)
+        Y.append([y])
+    X = np.vstack(X)
+    Y = np.vstack(Y)
     return torch.FloatTensor(X), torch.LongTensor(Y)
 
 
@@ -68,25 +63,25 @@ def evaluate(model):
     model.eval()
     test_sample_num = 100
     x, y = build_dataset(test_sample_num)
+
     correct, wrong = 0, 0
     with torch.no_grad():
         y_pred = model(x)  # 模型预测
         for y_p, y_t in zip(y_pred, y):  # 与真实标签进行对比
-            if torch.argmax(y_p) == int(y_t):
-                correct += 1
+            if torch.argmax(y_p) == y_t:
+                correct += 1  # 负样本判断正确
             else:
                 wrong += 1
-
     print("正确预测个数：%d, 正确率：%f" % (correct, correct / (correct + wrong)))
     return correct / (correct + wrong)
 
 
 def main():
     # 配置参数
-    epoch_num = 100  # 训练轮数
+    epoch_num = 20  # 训练轮数
     batch_size = 20  # 每次训练样本个数
     train_sample = 5000  # 每轮训练总共训练的样本总数
-    input_size = 6  # 输入向量维度
+    input_size = 5  # 输入向量维度
     learning_rate = 0.001  # 学习率
     # 建立模型
     model = TorchModel(input_size)
@@ -123,7 +118,7 @@ def main():
 
 # 使用训练好的模型做预测
 def predict(model_path, input_vec):
-    input_size = 6
+    input_size = 5
     model = TorchModel(input_size)
     model.load_state_dict(torch.load(model_path))  # 加载训练好的权重
     print(model.state_dict())
@@ -131,15 +126,16 @@ def predict(model_path, input_vec):
     model.eval()  # 测试模式
     with torch.no_grad():  # 不计算梯度
         result = model.forward(torch.FloatTensor(input_vec))  # 模型预测
-
     for vec, res in zip(input_vec, result):
-        print("输入：%s, 预测类别：%s, 概率值：%s" % (vec, torch.argmax(res), res))  # 打印结果
+        r = F.softmax(res)#计算概率值
+        r_index = torch.argmax(res)
+        print("输入：%s, 预测类别：%d, 概率值：%f" % (vec, r_index, r[int(r_index)]))  # 打印结果
 
 
 if __name__ == "__main__":
     main()
-    # test_vec = [[0.07889086,0.15229675,-0.088920843,0.07889086,0.15229675,-0.88920843],
-    #             [0.94963533,-0.9524256,0.95758807,0.94963533,-0.5524256,0.95758807],
-    #             [-2.78797868,0.67482528,0.13625847,0.78797868,0.67482528,5.13625847],
-    #             [10.19349776,-0.59416669,-8.2579291,-0.19349776,-0.59416669,-0.29416669]]
-    # predict("model.pt", test_vec)
+    test_vec = [[0.07889086,0.15229675,0.31082123,0.03504317,0.18920843],
+                [0.94963533,0.5524256,0.95758807,0.95520434,0.84890681],
+                [0.78797868,0.67482528,0.13625847,0.34675372,0.19871392],
+                [0.19349776,0.59416669,0.92579291,0.41567412,0.7358894]]
+    predict("model.pt", test_vec)

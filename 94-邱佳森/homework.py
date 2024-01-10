@@ -3,63 +3,58 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import random
+import json
 import matplotlib.pyplot as plt
 
 """
-
-基于pytorch框架编写模型训练-------交叉熵
-实现一个自行构造的找规律(机器学习)任务
-
-规律：x是一个6维向量，前两个数之和最大为第一类：0，中间两个数之和最大为第二类：1，最后两个数之和最大为第三类: 2
-
-// 也可以将正负样本的案例，使用交叉熵完成
-
+规律：x是一个5维向量，输出一个5维向量，若x最大值是下标为x[3],则y[3]=1,其他为0，以此类推
+[1,2,5,3,4] => [0,0,1,0,0]
+[1,2,3,4,5] => [0,0,0,0,1]
+[5,4,3,2,1] => [1,0,0,0,0]
 
 """
-
-class TorchModel(nn.Module):
-    def __init__(self, input_size):
-        super(TorchModel, self).__init__()
-        self.linear = nn.Linear(input_size, 3)  # 线性层，输出为batch_size*10维向量
-        # self.activation = torch.softmax  # sigmoid归一化函数   cross_entropy内部已经集成了
-        self.loss = nn.functional.cross_entropy  # 交叉熵
-
-    # 当输入真实标签，返回loss值；无真实标签，返回预测值
-    def forward(self, x, y=None):
-        ## y_pred 输出的是一组权重
-        y_pred = self.linear(x)  # (batch_size, input_size) -> (batch_size, 10)
-        # y_pred = self.activation(x)  # (batch_size, 1) -> (batch_size, 1)
-        if y is not None:
-            return self.loss(y_pred, y)  # 预测值和真实值计算损失  (batch_size, 10)--> (batch_size, 1) compare y
-        else:
-            return y_pred  # 输出预测结果
-
-
-# 生成一个样本, 样本的生成方法，代表了我们要学习的规律
-# 随机生成一个10维向量，取其中最小值的索引值
-def build_sample():
-    x = np.random.rand(6)
-    sums = [x[0] + x[1], x[2] + x[3], x[4] + x[5]]
-    y = np.argmax(sums)
+dimensions = 5
+# x是一个 shape维向量，输出一个shape维向量，若x最大值是下标为x[3],则y[3]=1,其他为0，以此类推
+def build_sample(shape):
+    x = np.random.random(shape)  # 生成一个指定形状的随机数组
+    max_index = np.argmax(x)  # 找到最大值的索引
+    y = np.zeros(shape)  # 用0填充一个具有指定形状的数组
+    for i in range(shape):
+        if i == max_index:
+            y[i] = 1
     return x, y
 
-
 # 随机生成一批样本
-# 数据结构为
-X=[[0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843],
-   [0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843],
-   [0.07889086,0.15229675,-0.38920843,0.07889086,0.15229675,-0.18920843]]
-y=[0,1,2]
-
-
 def build_dataset(total_sample_num):
     X = []
     Y = []
     for i in range(total_sample_num):
-        x, y = build_sample()
+        x, y = build_sample(dimensions)
         X.append(x)
         Y.append(y)
-    return torch.FloatTensor(X), torch.LongTensor(Y)
+    return torch.FloatTensor(X), torch.FloatTensor(Y)
+
+
+
+
+class TorchModel(nn.Module):
+    def __init__(self, input_size):
+        super(TorchModel, self).__init__()
+        self.linear = nn.Linear(input_size, dimensions)  # 线性层
+        self.activation = torch.sigmoid  # sigmoid归一化函数
+        self.loss = nn.functional.mse_loss  # loss函数采用均方差损失
+
+    # 当输入真实标签，返回loss值；无真实标签，返回预测值
+    def forward(self, x, y=None):
+        x = self.linear(x)  # (batch_size, input_size) -> (batch_size, 1)
+        y_pred = self.activation(x)  # (batch_size, 1) -> (batch_size, 1)
+        if y is not None:
+            return self.loss(y_pred, y)  # 预测值和真实值计算损失
+        else:
+            return y_pred  # 输出预测结果
+
+
 
 
 # 测试代码
@@ -68,26 +63,28 @@ def evaluate(model):
     model.eval()
     test_sample_num = 100
     x, y = build_dataset(test_sample_num)
+    print("本次预测总样本是" ,test_sample_num)
     correct, wrong = 0, 0
     with torch.no_grad():
         y_pred = model(x)  # 模型预测
         for y_p, y_t in zip(y_pred, y):  # 与真实标签进行对比
-            if torch.argmax(y_p) == int(y_t):
+            if torch.argmax(y_p) == torch.argmax(y_t):
                 correct += 1
             else:
                 wrong += 1
+            # print("预测值：%s ,预测值最大下标：%s,真实值：%s,预测值最大下标：%s" %(y_p,torch.argmax(y_p),y_t,torch.argmax(y_t)))
 
     print("正确预测个数：%d, 正确率：%f" % (correct, correct / (correct + wrong)))
-    return correct / (correct + wrong)
+    return correct / test_sample_num
 
 
 def main():
     # 配置参数
-    epoch_num = 100  # 训练轮数
+    epoch_num = 30  # 训练轮数
     batch_size = 20  # 每次训练样本个数
     train_sample = 5000  # 每轮训练总共训练的样本总数
-    input_size = 6  # 输入向量维度
-    learning_rate = 0.001  # 学习率
+    input_size = 5  # 输入向量维度
+    learning_rate = 0.003  # 学习率
     # 建立模型
     model = TorchModel(input_size)
     # 选择优化器
@@ -123,7 +120,7 @@ def main():
 
 # 使用训练好的模型做预测
 def predict(model_path, input_vec):
-    input_size = 6
+    input_size = 5
     model = TorchModel(input_size)
     model.load_state_dict(torch.load(model_path))  # 加载训练好的权重
     print(model.state_dict())
@@ -131,15 +128,15 @@ def predict(model_path, input_vec):
     model.eval()  # 测试模式
     with torch.no_grad():  # 不计算梯度
         result = model.forward(torch.FloatTensor(input_vec))  # 模型预测
-
     for vec, res in zip(input_vec, result):
-        print("输入：%s, 预测类别：%s, 概率值：%s" % (vec, torch.argmax(res), res))  # 打印结果
+        # print("输入：%s, 预测类别：%d, 概率值：%f" % (vec, round(float(res)), res))  # 打印结果
+        print("输入：%s, 输出：%s" % (vec, res))  # 打印结果
 
 
 if __name__ == "__main__":
     main()
-    # test_vec = [[0.07889086,0.15229675,-0.088920843,0.07889086,0.15229675,-0.88920843],
-    #             [0.94963533,-0.9524256,0.95758807,0.94963533,-0.5524256,0.95758807],
-    #             [-2.78797868,0.67482528,0.13625847,0.78797868,0.67482528,5.13625847],
-    #             [10.19349776,-0.59416669,-8.2579291,-0.19349776,-0.59416669,-0.29416669]]
-    # predict("model.pt", test_vec)
+    test_vec = [[0.07889086,0.15229675,0.31082123,0.03504317,0.18920843],
+                [0.94963533,0.5524256,0.95758807,0.95520434,0.84890681],
+                [0.78797868,0.67482528,0.13625847,0.34675372,0.19871392],
+                [0.19349776,0.59416669,0.92579291,0.41567412,0.7358894]]
+    predict("model.pt", test_vec)
