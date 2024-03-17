@@ -11,12 +11,12 @@ Config = {
     "train_data_path": "ner_data/train.txt",
     "valid_data_path": "ner_data/test.txt",
     "vocab_path": "chars.txt",
-    "max_length": 25,
+    "max_length": 30,
     "hidden_size": 768,
-    "epoch": 30,
+    "epoch": 20,
     "batch_size": 64,
     "optimizer": "adam",
     "learning_rate": 1e-4,
-    "use_crf": True,
+    "use_crf": False,
     "class_num": 9
 }
