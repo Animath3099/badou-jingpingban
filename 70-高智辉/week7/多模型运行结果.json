@@ -1,0 +1,211 @@
+{
+   "model":"gated_cnn",
+   "configs":[
+      {
+         "acc":0.6666666666666666,
+         "config":"[model_type: gated_cnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6027777777777777,
+         "config":"[model_type: gated_cnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.37222222222222223,
+         "config":"[model_type: gated_cnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.3333333333333333,
+         "config":"[model_type: gated_cnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"fast_text",
+   "configs":[
+      {
+         "acc":0.6,
+         "config":"[model_type: fast_text], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.5472222222222223,
+         "config":"[model_type: fast_text], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.17777777777777778,
+         "config":"[model_type: fast_text], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.1361111111111111,
+         "config":"[model_type: fast_text], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"lstm",
+   "configs":[
+      {
+         "acc":0.5638888888888889,
+         "config":"[model_type: lstm], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.4444444444444444,
+         "config":"[model_type: lstm], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.041666666666666664,
+         "config":"[model_type: lstm], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.03611111111111111,
+         "config":"[model_type: lstm], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"gru",
+   "configs":[
+      {
+         "acc":0.5861111111111111,
+         "config":"[model_type: gru], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.4722222222222222,
+         "config":"[model_type: gru], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.08888888888888889,
+         "config":"[model_type: gru], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.075,
+         "config":"[model_type: gru], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"rnn",
+   "configs":[
+      {
+         "acc":0.5944444444444444,
+         "config":"[model_type: rnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.5444444444444444,
+         "config":"[model_type: rnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.225,
+         "config":"[model_type: rnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.19722222222222222,
+         "config":"[model_type: rnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"cnn",
+   "configs":[
+      {
+         "acc":0.6111111111111112,
+         "config":"[model_type: cnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6055555555555555,
+         "config":"[model_type: cnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.39166666666666666,
+         "config":"[model_type: cnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.39166666666666666,
+         "config":"[model_type: cnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"rcnn",
+   "configs":[
+      {
+         "acc":0.6222222222222222,
+         "config":"[model_type: rcnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.575,
+         "config":"[model_type: rcnn], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.3333333333333333,
+         "config":"[model_type: rcnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.3055555555555556,
+         "config":"[model_type: rcnn], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"bert",
+   "configs":[
+      {
+         "acc":0.7944444444444444,
+         "config":"[model_type: bert], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.7916666666666666,
+         "config":"[model_type: bert], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.7777777777777778,
+         "config":"[model_type: bert], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.7527777777777778,
+         "config":"[model_type: bert], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"bert_lstm",
+   "configs":[
+      {
+         "acc":0.7083333333333334,
+         "config":"[model_type: bert_lstm], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6944444444444444,
+         "config":"[model_type: bert_lstm], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.675,
+         "config":"[model_type: bert_lstm], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6722222222222223,
+         "config":"[model_type: bert_lstm], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ],
+   "model":"bert_cnn",
+   "configs":[
+      {
+         "acc":0.7138888888888889,
+         "config":"[model_type: bert_cnn], [learning_rate: 0.001], [hidden_size: 768], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6694444444444444,
+         "config":"[model_type: bert_cnn], [learning_rate: 0.0001], [hidden_size: 768], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6555555555555556,
+         "config":"[model_type: bert_cnn], [learning_rate: 0.0001], [hidden_size: 768], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6027777777777777,
+         "config":"[model_type: bert_cnn], [learning_rate: 0.001], [hidden_size: 768], [batch_size: 64], [pooling_style: avg]"
+      }
+   ],
+   "model":"bert_mid_layer",
+   "configs":[
+      {
+         "acc":0.6916666666666667,
+         "config":"[model_type: bert_mid_layer], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6861111111111111,
+         "config":"[model_type: bert_mid_layer], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 64], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6694444444444444,
+         "config":"[model_type: bert_mid_layer], [learning_rate: 0.0001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      },
+      {
+         "acc":0.6472222222222223,
+         "config":"[model_type: bert_mid_layer], [learning_rate: 0.001], [hidden_size: 128], [batch_size: 128], [pooling_style: avg]"
+      }
+   ]
+}

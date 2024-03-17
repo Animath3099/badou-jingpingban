@@ -1,0 +1,26 @@
+
+-------以下是embedding层结构-------
+1. vocab_embedding: vocab_size * hidden_size # 21128 * 768
+2. position_embedding: max_position * hidden_size # 512 * 768
+3. segment_embedding: 2 * hidden_size # 2 * 768
+4. 归一化层：hidden_size + hidden_size = 768+768
+
+-------以下是transformer结构-------
+self_attention层
+1. qkv的三个线性层: 3*(hidden_size * hidden_size + 1 * hidden_size) = 3*(768*768+768)
+2. qkv的多头合并后的输出线性层: hidden_size * hidden_size + 1 * hidden_size = 768*768+768
+3. 归一化层：hidden_size + hidden_size = 768+768
+feed_forward层
+1. 中间线性层: hidden_size * 4*hidden_size + 4*hidden_size = 768*3072+3072
+2. 中间输出层: 4*hidden_size * hidden_size + hidden_size = 3072*768+768
+2. 归一化层: hidden_size + hidden_size = 768+768
+
+-------以下是整句话代表cls_token过的输出结构-------
+1. cls_token输出层：hidden_size * hidden_size + 1 * hidden_size = 768*768+768
+
+-------最终结果加和-----------------------------------------
+(vocab_size + max_position + 2 + 2) hidden_size = 16622592
+12hidden_size ** 2 + 13hidden_size = 7087872
+hidden_size ** 2 + hidden_size = 590592
+
+正常的12层的Bert参数总量 = 16622592 + 12 * 7087872 + 590592 = 102267648

@@ -19,9 +19,9 @@ class TorchModel(nn.Module):
     def __init__(self, vector_dim, sentence_length, vocab):
         super(TorchModel, self).__init__()
         self.embedding = nn.Embedding(len(vocab), vector_dim)  #embedding层
-        self.pool = nn.AvgPool1d(sentence_length)   #池化层
+        # self.pool = nn.AvgPool1d(sentence_length)   #池化层
         #可以自行尝试切换使用rnn
-        # self.rnn = nn.RNN(vector_dim, vector_dim, batch_first=True)
+        self.rnn = nn.RNN(vector_dim, vector_dim, batch_first=True)
 
         # +1的原因是可能出现a不存在的情况，那时的真实label在构造数据时设为了sentence_length
         self.classify = nn.Linear(vector_dim, sentence_length + 1)     
@@ -31,12 +31,12 @@ class TorchModel(nn.Module):
     def forward(self, x, y=None):
         x = self.embedding(x)           
         #使用pooling的情况
-        x = x.transpose(1, 2)           
-        x = self.pool(x)                
-        x = x.squeeze()   
+        # x = x.transpose(1, 2)           
+        # x = self.pool(x)                
+        # x = x.squeeze()   
         #使用rnn的情况              
-        # rnn_out, hidden = self.rnn(x)
-        # x = rnn_out[:, -1, :]  #或者写hidden.squeeze()也是可以的，因为rnn的hidden就是最后一个位置的输出
+        rnn_out, hidden = self.rnn(x)
+        x = rnn_out[:, -1, :]  #或者写hidden.squeeze()也是可以的，因为rnn的hidden就是最后一个位置的输出
 
         #接线性层做分类
         y_pred = self.classify(x)            

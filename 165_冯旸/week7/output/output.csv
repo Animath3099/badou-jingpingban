@@ -1,0 +1,4 @@
+model_path,train_data_path,valid_data_path,vocab_path,model_type,max_length,hidden_size,kernel_size,num_layers,epoch,batch_size,pooling_style,optimizer,learning_rate,pretrain_model_path,seed,average loss,acc,time(s)
+output,./data/train.csv,./data/valid.csv,chars.txt,cnn,463,256,3,1,15,128,max,adam,0.001,..\bert-base-chinese,987,0.012936947,0.892230576,349.4540277
+output,./data/train.csv,./data/valid.csv,chars.txt,lstm,463,256,3,1,15,128,max,adam,0.001,..\bert-base-chinese,987,0.099433614,0.8925,1034.687637
+output,./data/train.csv,./data/valid.csv,chars.txt,bert,463,256,3,1,15,128,max,adam,0.001,.\bert-base-chinese,987,2,0.885,20272.77172

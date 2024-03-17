@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/131-邱健达.iml" filepath="$PROJECT_DIR$/.idea/131-邱健达.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../BachelorAlbLearningHub/.idea/BachelorAlbLearningHub.iml" filepath="$PROJECT_DIR$/../../BachelorAlbLearningHub/.idea/BachelorAlbLearningHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../BaiduNetdiskDownload/week4 中文分词和tfidf特征应用/.idea/week4 中文分词和tfidf特征应用.iml" filepath="$PROJECT_DIR$/../../../BaiduNetdiskDownload/week4 中文分词和tfidf特征应用/.idea/week4 中文分词和tfidf特征应用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../BaiduNetdiskDownload/第三周/.idea/第三周.iml" filepath="$PROJECT_DIR$/../../../BaiduNetdiskDownload/第三周/.idea/第三周.iml" />
+    </modules>
+  </component>
+</project>

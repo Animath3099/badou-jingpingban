@@ -1,0 +1,12 @@
+*.*~
+pytoch/data/
+=======
+pytorch/data/raw/
+*.gz
+.idea/
+hub/
+*fid_image/
+*pycache*
+check_point/
+*data/
+*checkpoints/

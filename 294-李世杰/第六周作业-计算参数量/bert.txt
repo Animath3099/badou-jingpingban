@@ -1,0 +1,69 @@
+1、bert tokenizer
+
+首先将输入的词进行分词和tokenizer 得到对应的索引
+
+深度学习 -->[2450, 15486, 102, 2110]                                              [1，n]
+
+1、进行tokenizer化
+得到对应的向量，
+word_embedding            word的对应向量  21128，768
+
+position_embedding       带入语序信息        512，768
+
+token_type_embedding 判断语序信息         2，768
+
+
+sum : we + pe + te   --->embedding                                              [n, 768]
+然后进行layer_norm                        norm化后接一个线性层            [n, 768]
+
+embedding  参数量    ：  3 * n * 768
+layer_norm    参数量   ：  w :  768     b:768
+
+2、进行transformers   1 层
+
+encoder
+
+1、 attention
+	x   * q_w + b  --->q                 参数量：   q_w : 768,768     w_b : 768
+	x   * k_w  + b  --->k		   参数量：   k_w : 768,768      k_b : 768
+	x   * v_w  + b  --->v                 参数量：   v_w : 768,768      v_b : 768
+	q   * k --> qk                             
+        qk    -- softmax -->qk              
+        qk * v ---> qkv                
+        qkv   线性计算  ---> attention    参数量：attention_output_weight : 768,768   attention_output_bias : 768
+	
+	参数量：768*768*4  + 768*4  =  9,440,256
+
+2、残差
+	x = x + attention
+	layernorm
+	x = (x-x.mean)/x.std
+	x = x * w + b                             参数量： w :  768   b ：768
+
+3、前馈神经
+	x = gelu(x * w + b)                  参数量： w : 3072,768   b : 3072
+	feed_x = x * w + b                   参数量： w : 3072,768   b : 3072
+
+4 、残差
+	x = x + feed_x
+	layernorm
+	x = (x-x.mean)/x.std
+	x = x * w +b                               参数量： w : 768   b : 768
+
+
+一层encoder参数量
+	9,440,256+768+768+4,718,592（3072*768*2）+6,144（3072*2）+768+768 = 14,168,064
+
+
+pooler_out
+	pooler_out = tanh(x[0] * w +b)   参数量：  w : 768,768   b: 768                 
+
+
+总共参数量  ： 一层encoder参数量 + pooler_out = 14,168,064 + 590,592 = 14,758,656
+ 
+	
+
+	
+
+
+

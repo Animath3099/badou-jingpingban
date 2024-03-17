@@ -1,0 +1,320 @@
+'model_type': 'fast_text'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.7943262411347518
+每轮耗时: 0.20332 seconds
+
+'model_type': 'fast_text'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6825198164372132
+每轮耗时: 0.22026 seconds
+
+'model_type': 'fast_text'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.3379224030037547
+每轮耗时: 0.20531 seconds
+
+'model_type': 'fast_text'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.622444722569879
+每轮耗时: 0.18139 seconds
+################################
+'model_type': 'lstm'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8514810179390905
+每轮耗时: 0.21927 seconds
+
+'model_type': lstm'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8306216103462661
+每轮耗时: 0.22226 seconds
+
+'model_type': 'lstm'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.6562369628702545
+每轮耗时: 0.22525 seconds
+
+'model_type': 'lstm'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6624947851481018
+每轮耗时: 0.22370 seconds
+################################
+'model_type': 'gru'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8414685022945348
+每轮耗时: 0.21727 seconds
+
+'model_type': 'gru'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8264497288277013
+每轮耗时: 0.19410 seconds
+
+'model_type': 'gru'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.20432 seconds
+
+'model_type': 'gru'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.20432 seconds
+################################
+'model_type': 'rnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8577388402169378
+每轮耗时: 0.18937 seconds
+
+'model_type': 'rnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8356278681685441
+每轮耗时: 0.18107 seconds
+
+'model_type': 'rnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.20133 seconds
+
+'model_type': 'rnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.20133 seconds
+################################
+'model_type': 'cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8731748018356279
+每轮耗时: 0.19734 seconds
+
+'model_type': 'cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.867334167709637
+每轮耗时: 0.19834 seconds
+
+'model_type': 'cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.18139 seconds
+
+'model_type': 'cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6758448060075094
+每轮耗时: 0.17541 seconds
+################################
+'model_type': 'gated_cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8919482686691698
+每轮耗时: 0.19036 seconds
+
+'model_type': 'gated_cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8694201084689195
+每轮耗时: 0.18538 seconds
+
+'model_type': 'gated_cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率: 0.6666666666666666
+每轮耗时: 0.19933 seconds
+
+'model_type': 'gated_cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.18239 seconds
+################################
+'model_type': 'rcnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8777638715060492
+每轮耗时: 0.19634 seconds
+
+'model_type': 'rcnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8677513558614935
+每轮耗时: 0.21628 seconds
+
+'model_type': 'rcnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率: 0.6662494785148102
+每轮耗时: 0.21528 seconds
+
+'model_type': 'rcnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.6662494785148102
+每轮耗时: 0.20631 seconds
+################################
+'model_type': 'bert'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8760951188986232
+每轮耗时: 0.54120 seconds
+
+'model_type': 'bert'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8669169795577806
+每轮耗时: 0.58504 seconds
+
+'model_type': 'bert'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率: 0.8118481435127243
+每轮耗时: 0.57109 seconds
+
+'model_type': 'bert'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.7413433458489779
+每轮耗时: 0.58205 seconds
+################################
+'model_type': 'bert_lstm'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8635794743429287
+每轮耗时: 0.74850 seconds
+
+'model_type': 'bert_lstm'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8731748018356279
+每轮耗时: 0.77293 seconds
+
+'model_type': 'bert_lstm'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率: 0.8189403420942846
+每轮耗时: 0.74424 seconds
+
+'model_type': 'bert_lstm'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.7889027951606175
+每轮耗时: 0.79791 seconds
+################################
+'model_type': 'bert_cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率：0.8752607425949103
+每轮耗时: 0.59212 seconds
+
+'model_type': 'bert_cnn'
+'learning_rate': 1e-4
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8685857321652065
+每轮耗时: 0.63599 seconds
+
+'model_type': 'bert_cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 64
+轮数：20
+准确率: 0.8226950354609929
+每轮耗时: 0.54817 seconds
+
+'model_type': 'bert_cnn'
+'learning_rate': 1e-6
+'max_length': 128
+'batch_size': 128
+轮数：20
+准确率：0.8156028368794326
+每轮耗时: 0.63139 seconds
+

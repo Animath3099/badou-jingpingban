@@ -1,0 +1,4 @@
+Model,Max_lenght,hidden_size,pooling_style,acc
+cnn,55,256,max,0.8957464553794829
+bert,55,256,max,0.886294134000556
+lstm,55,256,max,0.8796219071448429
