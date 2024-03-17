@@ -10,13 +10,13 @@ Config = {
     "schema_path": "ner_data/schema.json",
     "train_data_path": "ner_data/train.txt",
     "valid_data_path": "ner_data/test.txt",
-    "vocab_path":"chars.txt",
-    "max_length": 150,
+    "vocab_path": "chars.txt",
+    "max_length": 25,
     "hidden_size": 768,
-    "epoch": 20,
+    "epoch": 30,
     "batch_size": 64,
     "optimizer": "adam",
-    "learning_rate": 1e-3,
+    "learning_rate": 1e-4,
     "use_crf": True,
     "class_num": 9
 }

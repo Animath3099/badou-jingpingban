@@ -3,6 +3,8 @@
 import json
 import re
 import os
+from collections import defaultdict
+
 import torch
 import random
 import jieba
@@ -37,11 +39,12 @@ class DataGenerator:
                     char, label = line.split()
                     sentenece.append(char)
                     labels.append(self.schema[label])
-                self.sentences.append("".join(sentenece))
+                merge_sentenece="".join(sentenece)
+                self.sentences.append(merge_sentenece)
                 # input_ids = self.encode_sentence(sentenece)
-                input_ids = self.tokenizer.encode(sentenece, max_length=self.config["max_length"], padding="max_length",truncation=True)
-
+                input_ids = self.tokenizer.encode(merge_sentenece, max_length=self.config["max_length"], padding="max_length",truncation=True)
                 labels = self.padding(labels, -1)
+
                 self.data.append([torch.LongTensor(input_ids), torch.LongTensor(labels)])
         return
 
