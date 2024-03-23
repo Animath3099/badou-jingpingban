@@ -1,0 +1,17 @@
+{
+  "model_path": "model_output",
+  "max_length": 20,
+  "hidden_size": 768,
+  "kernel_size": 3,
+  "train_sample": 50000,
+  "corpus": "corpus.txt",
+  "num_layers": 1,
+  "epoch": 15,
+  "batch_size": 32,
+  "window_size": 10,
+  "pooling_style": "max",
+  "optimizer": "adam",
+  "learning_rate": 1e-4,
+  "pretrain_model_path": "C:/Users/Admin/bert-base-chinese",
+  "seed": 987
+}
