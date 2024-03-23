@@ -1,0 +1,6 @@
+*.pth
+*.json
+*.pt
+*.w2v
+*.txt
+*.pyc
